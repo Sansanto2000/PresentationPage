@@ -3,6 +3,11 @@
   "name": "Links Page of Santiago Andres Ponte Ahón",
   "icons": [
     {
+      "src": "fotoSAPonteAhon.jpg",
+      "type": "image/png",
+      "sizes": "800x800"
+    },
+    {
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
