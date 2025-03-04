@@ -11,19 +11,27 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
   height: 100%;
 }
 
 .User-Photo {
-  width: 40vmin;
-  height: 40vmin;
+  width: 30vmin;
+  height: 30vmin;
   border-radius: 50%;
-  margin-top: 4%;
-  margin-bottom: 4%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   border: 2px solid white;
   border-radius: 50%;
+}
+
+.Title {
+  font-size: calc(10px + 2vmin); /* Tamaño grande para el título */
+  font-weight: 700; /* Fuente más gruesa */
+}
+
+.Subtitle {
+  font-size: calc(5px + 2vmin); /* Tamaño más pequeño para el subtítulo */
+  font-weight: 300; /* Fuente más fina */
 }
 
 @media (prefers-reduced-motion: no-preference) {
