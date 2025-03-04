@@ -11,6 +11,36 @@
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
+    },
+    {
+      "src": "logo-gitHub-black.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "logo-linkedIn-black.png",
+      "sizes": "980x980",
+      "type": "image/png"
+    },
+    {
+      "src": "logo-mail-black.png",
+      "sizes": "225x225",
+      "type": "image/png"
+    },
+    {
+      "src": "logo-googleScholar-black.png",
+      "sizes": "1042x1041",
+      "type": "image/png"
+    },
+    {
+      "src": "logo-whatsApp-black.png",
+      "sizes": "224x225",
+      "type": "image/png"
+    },
+    {
+      "src": "logo-alphaXiv-black.png",
+      "sizes": "400x400",
+      "type": "image/png"
     }
   ],
   "start_url": ".",
