@@ -7,11 +7,17 @@ Pagina react pequeña que recopila varios links de interes.
 Instalar dependencias
 
 ```
-npm install;
+npm install
 ```
 
-Iniciar aplicación
+Iniciar aplicación (desarrollo)
 
 ```
-npm start;
+npm start
+```
+
+Iniciar aplicación (producción)
+
+```
+npm run build
 ```
