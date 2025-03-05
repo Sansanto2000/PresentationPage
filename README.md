@@ -13,11 +13,12 @@ npm install
 Iniciar aplicación (desarrollo)
 
 ```
-npm start
+npm run dev
 ```
 
 Iniciar aplicación (producción)
 
 ```
 npm run build
+npm run start
 ```
