@@ -12,3 +12,4 @@ next-env.d.ts
 # Sistema y logs
 .DS_Store
 *.log
+*.tsbuildinfo
