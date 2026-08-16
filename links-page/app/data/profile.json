@@ -1,0 +1,42 @@
+{
+  "name": "S. A. Ponte Ahón",
+  "photo": "fotoSAPonteAhon.jpg",
+  "photoAlt": "Foto de Santiago Andrés Ponte Ahón",
+  "degrees": [
+    {
+      "name": "Magíster en Inteligencia de Datos orientada a Big Data",
+      "institution": "UNLP",
+      "year": 2026
+    },
+    {
+      "name": "Licenciado en Informática",
+      "institution": "UNLP",
+      "year": 2023
+    },
+    {
+      "name": "Licenciado en Sistemas",
+      "institution": "UNLP",
+      "year": 2023
+    }
+  ],
+  "certificates": {
+    "label": "Certificados y CV",
+    "link": "https://github.com/Sansanto2000/CV"
+  },
+  "footer": {
+    "copyrightHolder": "S. A. Ponte Ahón",
+    "affiliation": {
+      "label": "III-LIDI · Facultad de Informática, UNLP",
+      "link": "https://weblidi.info.unlp.edu.ar/"
+    },
+    "logo": {
+      "enabled": false,
+      "src": "",
+      "alt": ""
+    },
+    "address": {
+      "enabled": false,
+      "text": ""
+    }
+  }
+}
