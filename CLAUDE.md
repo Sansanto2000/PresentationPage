@@ -82,7 +82,8 @@ Reglas **obligatorias**:
 ## Versionado
 
 Se sigue **SemVer** (`MAJOR.MINOR.PATCH`), y la versión vive en `links-page/package.json`.
-El número **no cuenta commits**: describe la naturaleza del cambio publicado.
+El número **no cuenta commits**: describe la naturaleza del cambio publicado. Antes de elegirlo,
+mirar las Releases del repositorio para saber desde dónde se parte.
 
 - **PATCH** (`1.1.0` → `1.1.1`): arreglos que no agregan nada. Un enlace roto, un color mal puesto.
 - **MINOR** (`1.1.0` → `1.2.0`): funcionalidad o contenido nuevo que no rompe lo anterior.
@@ -94,7 +95,7 @@ Una versión agrupa todos los commits de una tanda: diez commits de arreglos sig
 solo `PATCH`. Al publicar:
 
 1. Actualizar `"version"` en `links-page/package.json`.
-2. Etiquetar el merge en `main`: `git tag -a v1.1.0 -m "v1.1.0" && git push origin v1.1.0`.
+2. Etiquetar el merge en `main`: `git tag -a vX.Y.Z -m "vX.Y.Z" && git push origin vX.Y.Z`.
 3. En GitHub, crear la Release a partir de esa etiqueta con un resumen de la tanda.
 
 ## Cosas a no romper
