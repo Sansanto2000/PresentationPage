@@ -1,0 +1,58 @@
+.page {
+  position: relative;
+  z-index: 1;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+}
+
+.page__content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xl) var(--space-md);
+}
+
+/*
+ * Velo suave detrás del contenido. Reemplaza a la tarjeta: sostiene la
+ * legibilidad sobre un fondo con mucho dibujo, pero sin dibujar una caja.
+ */
+.page__content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 22rem 26rem at 50% 50%,
+    rgba(16, 14, 24, 0.82) 0%,
+    rgba(16, 14, 24, 0.62) 45%,
+    rgba(16, 14, 24, 0) 78%
+  );
+  pointer-events: none;
+}
+
+.stack {
+  position: relative;
+  width: min(100%, 25rem);
+}
+
+.stack__links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+  padding-top: var(--space-lg);
+  border-top: 1px solid rgba(253, 250, 246, 0.18);
+}
+
+/* Ventanas bajas: se recorta el aire alrededor antes que el contenido. */
+@media (max-height: 56rem) {
+  .page__content {
+    padding: var(--space-md);
+  }
+
+  .stack__links {
+    margin-top: var(--space-md);
+    padding-top: var(--space-md);
+  }
+}

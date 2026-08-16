@@ -1,19 +1,37 @@
-import React from "react";
-import "./App.css";
 import links from "./data/links.json";
+import profile from "./data/profile.json";
+import { LinkItem, Profile } from "./interfaces";
+import CertificatesLink from "./molecules/CertificatesLink";
 import LinkBox from "./molecules/LinkBox";
+import MazeBackground from "./molecules/MazeBackground";
+import ProfileHeader from "./molecules/ProfileHeader";
+import SiteFooter from "./molecules/SiteFooter";
+import "./styles/page.css";
 
-function App() {
+const currentProfile = profile as Profile;
+const linkItems = links as LinkItem[];
+
+export default function Home() {
   return (
-    <div className="App">
-      <img src={"fotoSAPonteAhon.jpg"} className="User-Photo" alt="Mi foto" />
-      <h1 className="Title"> S. A. Ponte Ahón</h1>
-      <h2 className="Subtitle">Lic. Informática - Lic. Sistemas</h2>
-      {links.map((link) => (
-        <LinkBox key={link.name} item={link} />
-      ))}
-    </div>
+    <>
+      <MazeBackground />
+
+      <div className="page">
+        <main className="page__content">
+          <section className="stack">
+            <ProfileHeader profile={currentProfile} />
+
+            <nav className="stack__links" aria-label="Perfiles y formas de contacto">
+              {linkItems.map((item) => (
+                <LinkBox key={item.name} item={item} />
+              ))}
+            </nav>
+          </section>
+        </main>
+
+        <CertificatesLink certificates={currentProfile.certificates} />
+        <SiteFooter config={currentProfile.footer} />
+      </div>
+    </>
   );
 }
-
-export default App;

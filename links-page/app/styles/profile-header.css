@@ -1,0 +1,51 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile__photo {
+  /* Protagonista de la tarjeta, como en la versión original. */
+  width: clamp(9rem, 30vmin, 12.5rem);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--color-surface-solid);
+  box-shadow: var(--shadow-card);
+  margin-bottom: var(--space-md);
+}
+
+/* En ventanas bajas la foto cede tamaño para que todo entre sin scroll. */
+@media (max-height: 56rem) {
+  .profile__photo {
+    width: clamp(6.5rem, 20vmin, 9rem);
+    margin-bottom: var(--space-sm);
+  }
+}
+
+.profile__name {
+  margin: 0;
+  color: var(--color-text-on-bg);
+  font-size: var(--text-title);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* Un título por línea: se leen de un vistazo y ninguno se parte al medio. */
+.profile__degrees {
+  margin: var(--space-sm) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.profile__degree {
+  font-size: var(--text-body);
+  font-weight: 300;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  color: var(--color-text-on-bg-muted);
+  cursor: help;
+  /* Un título largo se reparte en dos líneas parejas en vez de dejar una huérfana. */
+  text-wrap: balance;
+}
