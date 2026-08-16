@@ -1,0 +1,68 @@
+/**
+ * Únicas fuentes de verdad para color, espaciado, tipografía y tiempos.
+ * Cualquier valor que se repita en más de un componente vive acá.
+ *
+ * Paleta "atardecer arcade": el salmón original manda, acompañado de un
+ * durazno dorado y un rosa ciruela (análogos, no compiten) sobre un índigo
+ * profundo que da el contraste. El violeta suave es el puente entre el
+ * salmón y el fondo, y evita que el degradado del laberinto se vea plano.
+ */
+:root {
+  /*
+   * Estado activo. El salmón quedó reservado para el laberinto: sobre los
+   * botones claros gritaba más que el fondo. Esta arena tibia sale del mismo
+   * degradado (es el durazno dorado, aclarado) y deja legibles los logos
+   * negros, cosa que un fondo oscuro no haría.
+   */
+  --color-hover-surface: #f6e3c2;
+  --color-hover-border: #dcb87d;
+
+  /* Fondo */
+  --color-bg-deep: #14121f;
+  --color-bg-mid: #2b2647;
+
+  /* Superficies y texto */
+  --color-surface-solid: #fdfaf6;
+  --color-text: #1e2531;
+  /* Texto que va directo sobre el laberinto, sin tarjeta que lo respalde. */
+  --color-text-on-bg: #fdfaf6;
+  --color-text-on-bg-muted: rgba(253, 250, 246, 0.74);
+  --color-link: #3f6f95;
+  --color-hairline: rgba(30, 37, 49, 0.12);
+
+  /* Pie de página */
+  --color-footer-bg: rgba(15, 13, 24, 0.82);
+  --color-footer-text: rgba(255, 255, 255, 0.72);
+
+  /* Paradas del degradado con el que se pintan las paredes del laberinto */
+  --maze-stop-1: #ee7e66; /* salmón */
+  --maze-stop-2: #e8b06a; /* durazno dorado */
+  --maze-stop-3: #b0637a; /* rosa ciruela */
+  --maze-stop-4: #6f5f9e; /* violeta suave */
+  /* Amarillo arcade: el punto más brillante de la pantalla, se sigue sin esfuerzo. */
+  --color-explorer: #ffd24d;
+
+  /* Espaciado */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.25rem;
+
+  /* Formas y sombras */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --shadow-card: 0 18px 45px rgba(5, 8, 15, 0.45);
+
+  /* Tipografía */
+  --font-sans: var(--font-lato), "Lato", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --text-title: clamp(1.6rem, 1.1rem + 2.2vw, 2.3rem);
+  --text-body: clamp(0.9rem, 0.82rem + 0.4vw, 1rem);
+  --text-small: 0.75rem;
+
+  /* Movimiento */
+  --transition-fast: 180ms ease;
+  /* Solo aplica al relevo entre laberintos: el primero entra sin fundido. */
+  --transition-maze: 2600ms ease-in-out;
+  --duration-drift: 52s;
+}
