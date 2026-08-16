@@ -8,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "^15.2.1",
+    "next": "^15.5.23",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
@@ -17,5 +17,10 @@
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "typescript": "^5.8.2"
+  },
+  "comment:overrides": "Next 15 arrastra versiones de postcss y sharp con advisories. Se fuerzan las parchadas para no tener que saltar a la major 16, que no aporta nada a este proyecto.",
+  "overrides": {
+    "postcss": "^8.5.26",
+    "sharp": "^0.35.3"
   }
 }
